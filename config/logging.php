@@ -17,7 +17,7 @@ return [
     |
     */
 
-    'default' => 'c', //env('LOG_CHANNEL', 'stack'),
+    'default' => 'errorlog', //env('LOG_CHANNEL', 'stack'),
 
     /*
     |--------------------------------------------------------------------------
