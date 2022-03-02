@@ -17,7 +17,7 @@ return [
     |
     */
 
-    'default' => 'custom', //env('LOG_CHANNEL', 'stack'),
+    'default' => env('LOG_CHANNEL', 'stack'),
 
     /*
     |--------------------------------------------------------------------------
@@ -35,11 +35,6 @@ return [
     */
 
     'channels' => [
-        'custom' => [
-            'driver' => 'custom',
-            'channels' => [],
-            'ignore_exceptions' => true,
-        ],
         'stack' => [
             'driver' => 'stack',
             'channels' => ['single'],
@@ -56,7 +51,7 @@ return [
             'driver' => 'daily',
             'path' => storage_path('logs/laravel.log'),
             'level' => 'debug',
-            'days' => 7,
+            'days' => 14,
         ],
 
         'slack' => [
@@ -96,7 +91,7 @@ return [
             'level' => 'debug',
         ],
 
-        'c' => [
+        'null' => [
             'driver' => 'monolog',
             'handler' => NullHandler::class,
         ],
