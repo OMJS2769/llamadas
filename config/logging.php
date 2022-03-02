@@ -35,6 +35,11 @@ return [
     */
 
     'channels' => [
+        'custom' => [
+            'driver' => 'custom',
+            'channels' => [],
+            'ignore_exceptions' => true,
+        ],
         'stack' => [
             'driver' => 'stack',
             'channels' => ['single'],
