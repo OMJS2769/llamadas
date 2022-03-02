@@ -49,7 +49,7 @@ return [
 
         'daily' => [
             'driver' => 'daily',
-            'path' => storage_path('logs/' . php_sapi_name() . '/laravel.log'),
+            'path' => storage_path('logs/laravel_' . date('Y-m-d') . '.log'),
             'level' => 'debug',
             'days' => 7,
         ],
