@@ -17,7 +17,7 @@ return [
     |
     */
 
-    'default' => 'daily', //env('LOG_CHANNEL', 'stack'),
+    'default' => 'null', //env('LOG_CHANNEL', 'stack'),
 
     /*
     |--------------------------------------------------------------------------
@@ -91,7 +91,7 @@ return [
             'level' => 'debug',
         ],
 
-        'null' => [
+        'c' => [
             'driver' => 'monolog',
             'handler' => NullHandler::class,
         ],
