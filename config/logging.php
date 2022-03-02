@@ -17,7 +17,7 @@ return [
     |
     */
 
-    'default' => 'papertrail', //env('LOG_CHANNEL', 'stack'),
+    'default' => 'custom', //env('LOG_CHANNEL', 'stack'),
 
     /*
     |--------------------------------------------------------------------------
